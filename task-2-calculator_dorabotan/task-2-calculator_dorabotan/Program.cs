@@ -71,7 +71,7 @@ namespace ConsoleApp1
 
         static double Divide(double x, double y)
         {
-            double r = x / y;
+            
             if (y == 0)
             {
                 throw new DivideByZeroException("Деление на ноль");
