@@ -148,6 +148,56 @@ namespace TextEditor
             }
 
         }
+
+        private void FontColor_black_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Foreground = Brushes.Black;
+        }
+
+        private void FontColor_green_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Foreground = Brushes.Green;
+        }
+
+        private void FontColor_red_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Foreground = Brushes.Red;
+        }
+
+        private void FontColor_blue_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Foreground = Brushes.Blue;
+        }
+
+        private void BackGroundColor_black_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Background = Brushes.Black;
+        }
+
+        private void BackGroundColor_green_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Background = Brushes.Green;
+        }
+
+        private void BackGroundColor_red_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Background = Brushes.Red;
+        }
+
+        private void BackGroundColor_blue_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Background = Brushes.Blue;
+        }
+
+        private void BackGroundColor_white_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Background = Brushes.White;
+        }
+
+        private void FontColor_white_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.textEditor.Foreground = Brushes.White;
+        }
     }
 }
 

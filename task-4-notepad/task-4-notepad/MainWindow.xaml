@@ -49,21 +49,25 @@
                 <TextBlock>Выбор цвета текста</TextBlock>
                 <ComboBoxItem IsSelected="True">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="blacksquare.png"  Width="30" />
+                        <Image Source="blacksquare.png"  Width="30" MouseLeftButtonDown="FontColor_black_Click" />
                         <TextBlock>black</TextBlock>
                     </StackPanel>
                 </ComboBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="green square.png" Width="30" />
+                    <Image Source="green square.png" Width="30" MouseLeftButtonDown="FontColor_green_Click" />
                     <TextBlock>green</TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="red.jpg" Width="30" />
+                    <Image Source="red.jpg" Width="30" MouseLeftButtonDown="FontColor_red_Click" />
                     <TextBlock Width="29">red</TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="blue1.jpg" Width="30" />
+                    <Image Source="blue1.jpg" Width="30" MouseLeftButtonDown="FontColor_blue_Click" />
                     <TextBlock>blue</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="white.jpg" Width="30" MouseLeftButtonDown="FontColor_white_Click" />
+                    <TextBlock>white</TextBlock>
                 </StackPanel>
             </ComboBox>
 
@@ -71,21 +75,25 @@
                 <TextBlock>Выбор цвета фона</TextBlock>
                 <ComboBoxItem IsSelected="True">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="blacksquare.png"  Width="30" />
+                        <Image Source="blacksquare.png"  Width="30" MouseLeftButtonDown="BackGroundColor_black_Click" />
                         <TextBlock>black</TextBlock>
                     </StackPanel>
                 </ComboBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="green square.png" Width="30" />
+                    <Image Source="green square.png" Width="30" MouseLeftButtonDown="BackGroundColor_green_Click" />
                     <TextBlock>green</TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="red.jpg" Width="30" />
+                    <Image Source="red.jpg" Width="30" MouseLeftButtonDown="BackGroundColor_red_Click" />
                     <TextBlock Width="29">red</TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="blue1.jpg" Width="30" />
+                    <Image Source="blue1.jpg" Width="30" MouseLeftButtonDown="BackGroundColor_blue_Click" />
                     <TextBlock>blue</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="white.jpg" Width="30" MouseLeftButtonDown="BackGroundColor_white_Click" />
+                    <TextBlock>white</TextBlock>
                 </StackPanel>
             </ComboBox>
 
