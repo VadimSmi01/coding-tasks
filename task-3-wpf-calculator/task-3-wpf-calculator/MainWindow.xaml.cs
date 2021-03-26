@@ -36,7 +36,7 @@ namespace task_3_wpf_calculator
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
             try
-            {
+            { 
                 string textButton = ((Button)e.OriginalSource).Content.ToString();
 
                 if (textButton == "C")
@@ -44,7 +44,7 @@ namespace task_3_wpf_calculator
                     text.Text = "";
                     
                 }
-               
+                    
                 else if (textButton == "=")
                 {
                     text.Text = new DataTable().Compute(text.Text, null).ToString();
