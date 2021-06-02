@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:primer_clicker"
         mc:Ignorable="d"
-         Title="MainWindow" Height="720" Width="1280">
+         Title="MainWindow" Height="720" Width="1280" MaxHeight="1280" MaxWidth="1920" MinHeight="600" MinWidth="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -17,10 +17,10 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button  Grid.Row="1" Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" HorizontalAlignment="Stretch" BorderBrush="#FFF1E8E8" Background="#FFEFF7F7" Foreground="White" x:Name="Batton" Visibility="Visible">
+        <Button MaxWidth="200" MinWidth="100" Grid.Row="1" Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" HorizontalAlignment="Stretch" BorderBrush="#FFF1E8E8" Background="#FFEFF7F7" Foreground="White" x:Name="Batton" Visibility="Visible">
             <Image Source="/cookies_1029391.png" Visibility="Visible" MouseLeftButtonDown="Batton_Click"/>
         </Button>
-        <TextBox Grid.Row="0" Grid.Column="1" Text="Go" TextWrapping="Wrap"  Background="#FFEFF7F7" Foreground="#FFDF8C34" SelectionBrush="#FFF5FBFC" FontSize="36" FontWeight="Bold" TextAlignment="Center" FontStyle="Normal" x:Name="Texbox" VerticalAlignment="Bottom" Margin="37,0,52,234" Grid.RowSpan="2">
+        <TextBox  MaxWidth="200" MinWidth="100" Grid.Row="0" Grid.Column="1" Text="Go" TextWrapping="Wrap"  Background="#FFEFF7F7" Foreground="#FFDF8C34" SelectionBrush="#FFF5FBFC" FontSize="36" FontWeight="Bold" TextAlignment="Center" FontStyle="Normal" x:Name="Texbox" VerticalAlignment="Top" Margin="37,35,52,234" Grid.RowSpan="2">
             <TextBox.TextDecorations>
                 <TextDecoration/>
             </TextBox.TextDecorations>
@@ -28,62 +28,14 @@
         <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" BorderBrush="#FFF1E8E8" Background="#FFF8FDFC" Foreground="White" x:Name="Batton_zanvo">
             <Image Source="/zanovo.png"  Visibility="Visible"  Width="88" Height="88" MouseLeftButtonDown="Button_zanovo" />
         </Button>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <StackPanel.Resources>
-                <!-- Шаблон для кнопок -->
-                <ControlTemplate x:Key="Button_Template" TargetType="{x:Type Button}">
-                    <Border BorderBrush="#333" BorderThickness="1" 
-                                TextBlock.Foreground="#ddd" Margin="0 0 15 0" MaxHeight="30"
-                                MinWidth="80" Padding="5" Name="myBorder">
-                        <Border.Background>
-                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                <GradientStop Color="#676767" Offset="0"></GradientStop>
-                                <GradientStop Color="#474747" Offset="1"></GradientStop>
-                            </LinearGradientBrush>
-                        </Border.Background>
-                        <ContentPresenter RecognizesAccessKey="True" Margin="{TemplateBinding Padding}"
-                              VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="myBorder" Property="Background">
-                                <Setter.Value>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                        <GradientStop Color="#777777" Offset="0"></GradientStop>
-                                        <GradientStop Color="#575757" Offset="1"></GradientStop>
-                                    </LinearGradientBrush>
-                                </Setter.Value>
-                            </Setter>
-                            <Setter TargetName="myBorder" Property="Cursor" Value="Hand"></Setter>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="myBorder" Property="Background">
-                                <Setter.Value>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                        <GradientStop Color="#939292" Offset="0"></GradientStop>
-                                        <GradientStop Color="#575757" Offset="1"></GradientStop>
-                                    </LinearGradientBrush>
-                                </Setter.Value>
-                            </Setter>
-                            <Setter TargetName="myBorder" Property="Cursor" Value="Hand"></Setter>
-                        </Trigger>
-                        <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="myBorder" Property="Background">
-                                <Setter.Value>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                        <GradientStop Color="#444" Offset="0"></GradientStop>
-                                        <GradientStop Color="#222" Offset="1"></GradientStop>
-                                    </LinearGradientBrush>
-                                </Setter.Value>
-                            </Setter>
-                            <Setter TargetName="myBorder" Property="Opacity" Value="0.4"></Setter>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </StackPanel.Resources>
-            <Button Template="{Binding Source={StaticResource ResourceKey=Button_Template}}">НАЗАД</Button>
-            <Button Template="{Binding Source={StaticResource ResourceKey=Button_Template}}" Content="ДАЛЕЕ"/>
-        </StackPanel>
+        <Button Margin="12 80 320 0" MaxWidth="100" MinWidth="80"  Content="Автокликер " Grid.Row="0" Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" BorderBrush="#FFF1E8E8" Background="#FF293CA3" Foreground="White" x:Name="Batton_">
+        </Button>
+        <Button Margin="12 80 120 0" MaxWidth="100" MinWidth="80" Content="Автокликер " Grid.Row="0" Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" BorderBrush="#FFF1E8E8" Background="#FFF8FDFC" Foreground="White" x:Name="Batton1">
+        </Button>
+        <Button Margin="90 80 0 0" MaxWidth="100" MinWidth="80" Content="Автокликер " Grid.Row="0" Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" BorderBrush="#FFF1E8E8" Background="#FFF8FDFC" Foreground="White" x:Name="Batton2">
+        </Button>
+        <Button Margin="290 80 0 0" MaxWidth="100" MinWidth="80" Content="Автокликер " Grid.Row="0" Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" BorderBrush="#FFF1E8E8" Background="#FFF8FDFC" Foreground="White" x:Name="Batton3">
+        </Button>
     </Grid>
     <Window.Background>
         <ImageBrush ImageSource="/back_graund.jpg" />
